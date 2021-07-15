@@ -250,18 +250,19 @@
                                                             <div
                                                                 class="text-xs font-weight-bold text-primary text-uppercase mb-1"
                                                             >
-                                                                Earnings
-                                                                (Monthly)
+                                                                강사명
                                                             </div>
                                                             <div
                                                                 class="h5 mb-0 font-weight-bold text-gray-800"
                                                             >
-                                                                $40,000
+                                                                {{
+                                                                    teacherName
+                                                                }}
                                                             </div>
                                                         </div>
                                                         <div class="col-auto">
                                                             <i
-                                                                class="fas fa-calendar fa-2x text-gray-300"
+                                                                class="fas fa-user-edit fa-2x text-gray-300"
                                                             ></i>
                                                         </div>
                                                     </div>
@@ -282,18 +283,17 @@
                                                             <div
                                                                 class="text-xs font-weight-bold text-success text-uppercase mb-1"
                                                             >
-                                                                Earnings
-                                                                (Annual)
+                                                                강의 이름
                                                             </div>
                                                             <div
                                                                 class="h5 mb-0 font-weight-bold text-gray-800"
                                                             >
-                                                                $215,000
+                                                                {{ className }}
                                                             </div>
                                                         </div>
                                                         <div class="col-auto">
                                                             <i
-                                                                class="fas fa-dollar-sign fa-2x text-gray-300"
+                                                                class="fas fa-book-reader fa-2x text-gray-300"
                                                             ></i>
                                                         </div>
                                                     </div>
@@ -302,7 +302,7 @@
                                         </div>
 
                                         <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
+                                        <div class="col-xl-6 col-md-6 mb-4">
                                             <div
                                                 class="card border-left-info shadow h-100 py-2"
                                             >
@@ -312,38 +312,24 @@
                                                     >
                                                         <div class="col mr-2">
                                                             <div
-                                                                class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                                                                class="text-xs font-weight-bold text-gray-800 text-uppercase mb-1"
                                                             >
-                                                                Tasks
+                                                                강의 주최기관 :
+                                                                {{ courseName }}
                                                             </div>
                                                             <div
-                                                                class="row no-gutters align-items-center"
+                                                                class="text-xs font-weight-bold text-gray-800 text-uppercase mb-1"
                                                             >
-                                                                <div
-                                                                    class="col-auto"
-                                                                >
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
-                                                                    >
-                                                                        50%
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="col"
-                                                                >
-                                                                    <div
-                                                                        class="progress progress-sm mr-2"
-                                                                    >
-                                                                        <div
-                                                                            class="progress-bar bg-info"
-                                                                            role="progressbar"
-                                                                            style="width: 50%"
-                                                                            aria-valuenow="50"
-                                                                            aria-valuemin="0"
-                                                                            aria-valuemax="100"
-                                                                        ></div>
-                                                                    </div>
-                                                                </div>
+                                                                강의 장소 :
+                                                                {{ classPlace }}
+                                                            </div>
+                                                            <div
+                                                                class="text-xs font-weight-bold text-gray-800 text-uppercase mb-1"
+                                                            >
+                                                                강의 시기:{{
+                                                                    classStart
+                                                                }}
+                                                                ~ {{ classEnd }}
                                                             </div>
                                                         </div>
                                                         <div class="col-auto">
@@ -369,20 +355,20 @@
                                                     >
                                                         <div class="col mr-2">
                                                             <div
-                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1"
-                                                            >
-                                                                Earnings
-                                                                (Monthly)
-                                                            </div>
-                                                            <div
                                                                 class="h5 mb-0 font-weight-bold text-gray-800"
                                                             >
-                                                                $40,000
+                                                                강의 만족도
                                                             </div>
                                                         </div>
                                                         <div class="col-auto">
                                                             <i
-                                                                class="fas fa-calendar fa-2x text-gray-300"
+                                                                class="far fa-thumbs-up fa-2x text-gray-300"
+                                                            ></i>
+                                                            <i
+                                                                class="fas fa-grip-lines-vertical fa-2x text-gray-300"
+                                                            ></i>
+                                                            <i
+                                                                class="far fa-thumbs-down fa-2x text-gray-300"
                                                             ></i>
                                                         </div>
                                                     </div>
@@ -391,39 +377,7 @@
                                         </div>
 
                                         <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
-                                            <div
-                                                class="card border-left-success shadow h-100 py-2"
-                                            >
-                                                <div class="card-body">
-                                                    <div
-                                                        class="row no-gutters align-items-center"
-                                                    >
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1"
-                                                            >
-                                                                Earnings
-                                                                (Annual)
-                                                            </div>
-                                                            <div
-                                                                class="h5 mb-0 font-weight-bold text-gray-800"
-                                                            >
-                                                                $215,000
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i
-                                                                class="fas fa-dollar-sign fa-2x text-gray-300"
-                                                            ></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
+                                        <div class="col-xl-9 col-md-6 mb-4">
                                             <div
                                                 class="card border-left-info shadow h-100 py-2"
                                             >
@@ -433,9 +387,12 @@
                                                     >
                                                         <div class="col mr-2">
                                                             <div
-                                                                class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                                                                class="text-xs font-weight-bold text-info text-uppercase mb-1 text-center"
                                                             >
-                                                                Tasks
+                                                                {{
+                                                                    average *
+                                                                        10
+                                                                }}%
                                                             </div>
                                                             <div
                                                                 class="row no-gutters align-items-center"
@@ -444,9 +401,11 @@
                                                                     class="col-auto"
                                                                 >
                                                                     <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                                                                        class="h5 mb-0 mr-3 font-weight-bold text-info-800"
                                                                     >
-                                                                        50%
+                                                                        <i
+                                                                            class="fas fa-chevron-right"
+                                                                        ></i>
                                                                     </div>
                                                                 </div>
                                                                 <div
@@ -458,140 +417,16 @@
                                                                         <div
                                                                             class="progress-bar bg-info"
                                                                             role="progressbar"
-                                                                            style="width: 50%"
-                                                                            aria-valuenow="50"
+                                                                            :style="[
+                                                                                `width: ${average *
+                                                                                    10}%`
+                                                                            ]"
                                                                             aria-valuemin="0"
                                                                             aria-valuemax="100"
                                                                         ></div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i
-                                                                class="fas fa-clipboard-list fa-2x text-gray-300"
-                                                            ></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Content Row -->
-                                    <div class="row">
-                                        <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
-                                            <div
-                                                class="card border-left-primary shadow h-100 py-2"
-                                            >
-                                                <div class="card-body">
-                                                    <div
-                                                        class="row no-gutters align-items-center"
-                                                    >
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-primary text-uppercase mb-1"
-                                                            >
-                                                                Earnings
-                                                                (Monthly)
-                                                            </div>
-                                                            <div
-                                                                class="h5 mb-0 font-weight-bold text-gray-800"
-                                                            >
-                                                                $40,000
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i
-                                                                class="fas fa-calendar fa-2x text-gray-300"
-                                                            ></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
-                                            <div
-                                                class="card border-left-success shadow h-100 py-2"
-                                            >
-                                                <div class="card-body">
-                                                    <div
-                                                        class="row no-gutters align-items-center"
-                                                    >
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-success text-uppercase mb-1"
-                                                            >
-                                                                Earnings
-                                                                (Annual)
-                                                            </div>
-                                                            <div
-                                                                class="h5 mb-0 font-weight-bold text-gray-800"
-                                                            >
-                                                                $215,000
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i
-                                                                class="fas fa-dollar-sign fa-2x text-gray-300"
-                                                            ></i>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Earnings (Monthly) Card Example -->
-                                        <div class="col-xl-3 col-md-6 mb-4">
-                                            <div
-                                                class="card border-left-info shadow h-100 py-2"
-                                            >
-                                                <div class="card-body">
-                                                    <div
-                                                        class="row no-gutters align-items-center"
-                                                    >
-                                                        <div class="col mr-2">
-                                                            <div
-                                                                class="text-xs font-weight-bold text-info text-uppercase mb-1"
-                                                            >
-                                                                Tasks
-                                                            </div>
-                                                            <div
-                                                                class="row no-gutters align-items-center"
-                                                            >
-                                                                <div
-                                                                    class="col-auto"
-                                                                >
-                                                                    <div
-                                                                        class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
-                                                                    >
-                                                                        50%
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="col"
-                                                                >
-                                                                    <div
-                                                                        class="progress progress-sm mr-2"
-                                                                    >
-                                                                        <div
-                                                                            class="progress-bar bg-info"
-                                                                            role="progressbar"
-                                                                            style="width: 50%"
-                                                                            aria-valuenow="50"
-                                                                            aria-valuemin="0"
-                                                                            aria-valuemax="100"
-                                                                        ></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <i
-                                                                class="fas fa-clipboard-list fa-2x text-gray-300"
-                                                            ></i>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -605,15 +440,47 @@
                         <!-- Content Row -->
                         <div class="row">
                             <!-- Content Column -->
-                            <div class="col-lg-6 mb-4">
+                            <div class="col-xl-12 col-lg-6 mb-4">
                                 <!-- Project Card Example -->
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
-                                        <h6
-                                            class="m-0 font-weight-bold text-primary"
-                                        >
-                                            Projects
-                                        </h6>
+                                        <!-- Content Row -->
+                                        <div class="row">
+                                            <!-- Pending Requests Card Example -->
+                                            <div
+                                                class="col-xl-4 col-md-6 mb-4 "
+                                            ></div>
+                                            <div
+                                                class="col-xl-4 col-md-6 mb-4 "
+                                            >
+                                                <div
+                                                    class="card border-left-warning shadow h-100 py-2"
+                                                >
+                                                    <div class="card-body">
+                                                        <div
+                                                            class="row no-gutters align-items-center"
+                                                        >
+                                                            <div
+                                                                class="col mr-2"
+                                                            >
+                                                                <div
+                                                                    class="h5 mb-0 font-weight-bold text-gray-800"
+                                                                >
+                                                                    항목별 평가
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-auto"
+                                                            >
+                                                                <i
+                                                                    class="fas fa-comments fa-2x text-gray-300"
+                                                                ></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="card-body">
                                         <h4 class="small font-weight-bold">
@@ -722,7 +589,14 @@ export default {
     components: {},
     data() {
         return {
-            sampleData: ''
+            teacherName: '서버에서 받은 생님 이름',
+            className: '서버에서 받은 강의 이름',
+            courseName: '서버에서 받은 과정 이름',
+            classPlace: '서버에서 받은 강의 장소',
+            classStart: '서버에서 받은 강의 시작일',
+            classEnd: '서버에서 받은 강의 종료일',
+            average1: '서버에서 받은 평균(0~10)',
+            average: 4
         }
     },
     setup() {},
